@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élodie Laurent - Experte en Cosmétiques Naturels</title>
+    <style>
+        /* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #5a4a42;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5a4a42;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b08e7e;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(90, 74, 66, 0.7), rgba(90, 74, 66, 0.7)), 
+                url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    background-color: #b08e7e;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #8a6d5f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #5a4a42;
+}
+
+.about h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #b08e7e;
+    font-weight: 300;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Products Section */
+.products {
+    padding: 100px 0;
+    background-color: #f5f0ed;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #5a4a42;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #b08e7e;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5a4a42;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #b08e7e;
+}
+
+/* Philosophy Section */
+.philosophy {
+    padding: 100px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.philosophy h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #5a4a42;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.philosophy-item {
+    padding: 30px 20px;
+}
+
+.philosophy-item i {
+    font-size: 40px;
+    color: #b08e7e;
+    margin-bottom: 20px;
+}
+
+.philosophy-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #5a4a42;
+}
+
+.philosophy-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background-color: #f5f0ed;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #5a4a42;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h3, .contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #5a4a42;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 15px;
+    color: #b08e7e;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f0ed;
+    border-radius: 50%;
+    margin-right: 15px;
+    color: #5a4a42;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #b08e7e;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MOUSSIMA NGILISSI</div>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#accueil">Accueil</a></li>
+                    <li><a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#apropos">À propos</a></li>
+                    <li><a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#produits">Nos produits</a></li>
+                    <li><a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#philosophie">Philosophie</a></li>
+                    <li><a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="container">
+            <h1>La Beauté Naturelle Réinventée</h1>
+            <p>Découvrez la gamme de cosmétiques bio et éthiques signée Élodie Laurent</p>
+            <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#produits" class="btn">Découvrir les produits</a>
+        </div>
+    </section>
+
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>MOUSSIMA MEGANE</h2>
+                    <h3>Experte en cosmétiques naturels</h3>
+                    <p>Avec plus de 7 ans d'expérience dans la formulation de produits cosmétiques, Élodie Laurent a créé sa propre gamme de soins visage et corps à base d'ingrédients naturels et biologiques. Diplômée en pharmacie et en cosmétologie, elle allie savoir-faire scientifique et amour de la nature pour créer des produits efficaces et respectueux de la peau et de l'environnement.</p>
+                    <p>Sa mission : offrir une alternative saine et luxueuse aux cosmétiques conventionnels.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./Moussima Megane- Experte en Cosmétiques Naturels_files/WhatsApp Image 2025-05-21 à 14.55.00_331253bc.jpg" alt="Élodie Laurent">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produits" class="products">
+        <div class="container">
+            <h2>Notre Gamme de Produits</h2>
+            <p class="subtitle">Des soins formulés avec amour et expertise</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Moussima Megane- Experte en Cosmétiques Naturels_files/photo-1556228578-8c89e6adf883" alt="Crème Hydratante">
+                    </div>
+                    <div class="product-info">
+                        <h3>Crème Hydratante Éclat</h3>
+                        <p>Une crème riche en actifs naturels pour une hydratation intense et un teint radieux.</p>
+                        <span class="price">3500fr</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Moussima Megane- Experte en Cosmétiques Naturels_files/photo-1596755094514-f87e34085b2c" alt="Sérum Anti-âge">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sérum Jeunesse</h3>
+                        <p>Un concentré d'antioxydants naturels pour lutter contre les signes de l'âge.</p>
+                        <span class="price">4000fr</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Moussima Megane- Experte en Cosmétiques Naturels_files/photo-1571781926291-c477ebfd024b" alt="Nettoyant Doux">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nettoyant Douceur</h3>
+                        <p>Un gel nettoyant ultra-doux qui respecte le film hydrolipidique de la peau.</p>
+                        <span class="price">2500fr</span>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Moussima Megane- Experte en Cosmétiques Naturels_files/photo-1591085686350-798c0f9faa7f" alt="Masque Détox">
+                    </div>
+                    <div class="product-info">
+                        <h3>Masque Purifiant</h3>
+                        <p>Un masque argileux enrichi en huiles essentielles pour purifier en profondeur.</p>
+                        <span class="price">3650fr</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#contact" class="btn">Demander le catalogue complet</a>
+        </div>
+    </section>
+
+    <section id="philosophie" class="philosophy">
+        <div class="container">
+            <h2>Notre Philosophie</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Naturel</h3>
+                    <p>Minimum 95% d'ingrédients d'origine naturelle dans chaque produit.</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Bio</h3>
+                    <p>Formules certifiées bio par Ecocert et Cosmébio.</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Écoresponsable</h3>
+                    <p>Emballages recyclables et rechargeables pour limiter notre impact.</p>
+                </div>
+                <div class="philosophy-item">
+                    <i class="fas fa-flask"></i>
+                    <h3>Innovant</h3>
+                    <p>Recherche constante pour allier efficacité et naturalité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 6 PK14, 456 Douala </p>
+                    <p><i class="fas fa-phone"></i> +237 6 91 73 89 85</p>
+                    <p><i class="fas fa-envelope"></i> contact@moussimamegane-cosmetiques.com</p>
+                    
+                    <div class="social-links">
+                        <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#"><i class="fab fa-instagram"></i></a>
+                        <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre email" required="">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Votre message" rows="5" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">MOUSSIMA COSMETIQUES</div>
+                <div class="footer-links">
+                    <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#">Mentions légales</a>
+                    <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#">Politique de confidentialité</a>
+                    <a href="file:///C:/Users/LENOVO/Desktop/TPE152%5B1%5D/TPE%20MEGANE/TPE%20Megane.html#">Conditions générales</a>
+                </div>
+            </div>
+            <div class="copyright">
+                © moussima cosmétiques. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+</body></html>

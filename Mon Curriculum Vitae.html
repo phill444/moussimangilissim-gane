@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///C:/Users/LENOVO/Desktop/TPE152[1]/TPE%20MEGANE/Mon%20Curriculum%20Vitae.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Curriculum Vitae</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f2f5f6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fafa8f;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* En-tête avec photo */
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+        }
+        
+        .photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            margin-right: 30px;
+        }
+        
+        .header-text {
+            flex: 1;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            color: #eab65d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 0.9em;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            color: #f498e4;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        /* Expérience et formation */
+        .item {
+            margin-bottom: 20px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .item-date {
+            color: #7f8c8d;
+        }
+        
+        .item-subtitle {
+            font-style: italic;
+            color: #f498e4;
+            margin-bottom: 5px;
+        }
+        
+        /* Compétences */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .skill {
+            color: #f498e4;
+            background-color: ;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+        
+        /* Pied de page */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #f498e4;
+            font-size: 0.9em;
+        }
+    </style>
+<script>
+    // Fonction pour rendre le CV responsive
+    function makeCVResponsive() {
+        const container = document.querySelector('.container');
+        const photo = document.querySelector('.photo');
+        const header = document.querySelector('header');
+        
+        function adjustLayout() {
+            const windowWidth = window.innerWidth;
+            
+            if (windowWidth < 768) {
+                // Mode mobile
+                container.style.width = '95%';
+                container.style.padding = '15px';
+                
+                // Changement de disposition du header
+                header.style.flexDirection = 'column';
+                header.style.alignItems = 'center';
+                header.style.textAlign = 'center';
+                
+                photo.style.marginRight = '0';
+                photo.style.marginBottom = '20px';
+                
+                // Ajustement des polices
+                document.body.style.fontSize = '14px';
+                h1.style.fontSize = '24px';
+                
+            } else if (windowWidth >= 768 && windowWidth < 1024) {
+                // Mode tablette
+                container.style.width = '85%';
+                container.style.padding = '20px';
+                
+                header.style.flexDirection = 'row';
+                header.style.textAlign = 'left';
+                photo.style.marginRight = '20px';
+                photo.style.marginBottom = '0';
+                
+                document.body.style.fontSize = '16px';
+                h1.style.fontSize = '28px';
+                
+            } else {
+                // Mode desktop
+                container.style.width = '800px';
+                container.style.padding = '30px';
+                
+                header.style.flexDirection = 'row';
+                header.style.textAlign = 'left';
+                photo.style.marginRight = '30px';
+                photo.style.marginBottom = '0';
+                
+                document.body.style.fontSize = '16px';
+                h1.style.fontSize = '32px';
+            }
+        }
+        
+        // Écouter les changements de taille
+        window.addEventListener('resize', adjustLayout);
+        
+        // Appliquer les styles au chargement
+        window.addEventListener('load', adjustLayout);
+    }
+    
+    // Appeler la fonction
+    makeCVResponsive();
+</script></head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Remplacez "photo.jpg" par le chemin de votre photo -->
+            <img src="./Mon Curriculum Vitae_files/WhatsApp Image 2025-05-21 à 14.55.00_331253bc.jpg" alt="Photo de profil" class="photo">
+            <div class="header-text">
+                <h1>Moussima Mégane</h1>
+                <p class="title">Experte en cosmétique</p>
+                <p class="contact-info">
+                    email: moussimamgane@example.com<br>
+                    téléphone: +237 658 65 36 98<br>
+                    adresse: pk14, Douala
+                </p>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Profil Professionnel</h2>
+            <p>
+Avec plus de 7 ans d'expérience dans la formulation de produits cosmétiques, Élodie Laurent a créé sa propre gamme de soins visage et corps à base d'ingrédients naturels et biologiques</p>
+        </section>
+        
+        <section>
+            <h2>Expérience Professionnelle</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Diplômée en pharmacie et en cosmétologie,</span>
+                    <span class="item-date">2022 - Présent</span>
+                </div>
+                <div class="item-subtitle">skincare Solutions, Douala</div>
+                <ul>
+                    <li>Maquilleuse professionnelle : spécialisée dans le maquillage pour les événements, les séances photo, les tournages</li>
+                    <li>Prothésiste ongulaire : pose de faux ongles, vernis, etc.</li>
+                    <li>- Formulateur cosmétique : développement de produits cosmétiques, tels que les crèmes, les savons, les parfums</li>
+                    <li>Esthéticienne : soins de peau, maquillage, épilation</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">experte en cosmétique </span>
+                    <span class="item-date">2020 - 2022</span>
+                </div>
+                <div class="item-subtitle">Women's Beauty, Yaoundé</div>
+                <ul>
+                    <li>Développement des produits pour tout type de peau et pour tout type d'âge</li>
+                    <li>Créativité : capacité à créer des looks personnalisés et à adapter les techniques aux besoins des clients</li>
+                    <li> Connaissances théoriques: Anatomie et physiologie de la peau</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Formation</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Académie Internationale de Beauté (AIB)</span>
+                    <span class="item-date">2018 - 2020</span>
+                </div>
+                <div class="item-subtitle">Diplôme en cosmétiques</div></div></section></div></body></html>
